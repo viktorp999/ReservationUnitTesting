@@ -7,7 +7,7 @@ namespace Reservation
 
         public bool CanBeCancelledBy(User user)
         {
-            if(user.IsAdmin || MadeBy == user)
+            if (user.IsAdmin || MadeBy == user)
             {
                 return true;
             }
